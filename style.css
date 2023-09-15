@@ -43,6 +43,7 @@ background: linear-gradient(90deg, rgba(211,211,211,1) 2%, rgba(92,234,140,0.169
     margin-bottom: 30px;
     position: fixed;
     top: 0;
+    z-index: 100;
     
   }
   
@@ -69,8 +70,9 @@ background: linear-gradient(90deg, rgba(211,211,211,1) 2%, rgba(92,234,140,0.169
     color: white;
   }
   img.image1 {
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
     border-radius: 25px;
     float: left;
     -webkit-transition: all 0.3s ease-in-out;
@@ -154,6 +156,8 @@ background: linear-gradient(90deg, rgba(211,211,211,1) 2%, rgba(92,234,140,0.169
     margin-top: 60px;
     margin-bottom: 60px;
     font-size: large;
+    position: relative;
+    z-index: 1;
     -webkit-transition: all 0.3s ease-in-out;
     transition: .1s ease-in-out;
   }
@@ -334,3 +338,6 @@ img.image3 {
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
 }
+
+/* Use flex box, positions (z index), grid and sticky within a container, 
+add max width media queries, responsive images */
